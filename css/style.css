@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+
+body {
+  background: #111;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #29d9d5;
+  font-size: 2rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #29d9d5;
+  border: 0.2rem solid #29d9d5;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #aaa;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.logo i {
+  color: #29d9d5;
+  padding-right: .5rem;
+}
+
+
+
+.anasayfa {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 70%;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/sinop-arkaplan.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.6)), url(../images/sinop-arkaplan.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+
+}
+
+.anasayfa .content {
+  text-align: center;
+}
+
+.anasayfa .content span {
+  font-weight: bolder;
+  color: transparent;
+  font-size: 4vw;
+  -webkit-text-stroke: 0.1rem #fff;
+  display: block;
+}
+
+.anasayfa .content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+
+.anasayfa .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.aktiviteler .box-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.aktiviteler .box-container .box {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #222;
+}
+
+.aktiviteler .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.aktiviteler .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.aktiviteler .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.aktiviteler .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.aktiviteler .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.aktiviteler .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.aktiviteler .box-container .box .content a {
+  font-size: 1.7rem;
+  color: #29d9d5;
+}
+
+.aktiviteler .box-container .box .content a:hover i {
+  padding-left: 1rem;
+}
+
+.aktiviteler .box-container .box .content a i {
+  padding-right: .5rem;
+}
+
+.ilceler .box-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.ilceler .box-container .box {
+  background: #222;
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+  border: 0.2rem solid #111;
+}
+
+.ilceler .box-container .box:hover {
+  border: 0.2rem solid #29d9d5;
+}
+
+.ilceler .box-container .box i {
+  font-size: 4rem;
+  color: #29d9d5;
+  margin-bottom: 2rem;
+}
+
+.ilceler .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.ilceler .box-container .box p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.yemekler .box-container {
+  columns: 3 25rem;
+  column-gap: 1.5rem;
+}
+
+.yemekler .box-container .box {
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
+
+.yemekler .box-container .box img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.yemekler .box-container .box span {
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.yemekler .box-container .box h3 {
+  margin-top: .5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.yemekler .box-container .box a {
+  font-size: 1.7rem;
+  color: #29d9d5;
+}
+.banner {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/sinop-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner .content span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.wrapper
+{
+	padding-bottom: 90px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 30%;
+	right: 30%;
+	width: 40%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(197, 197, 199), transparent);
+}
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .logo {
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box p i {
+  padding-right: .5rem;
+  color: #29d9d5;
+}
+
+.footer .box-container .box .share {
+  padding-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  border: 0.2rem solid #29d9d5;
+  color: #29d9d5;
+  margin-right: .5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.footer .box-container .box .links {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box .links:hover {
+  color: #29d9d5;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .links i {
+  padding-right: .5rem;
+  color: #29d9d5;
+}
+
+.footer .box-container .box form .email {
+  width: 100%;
+  border-radius: 5rem;
+  border: 0.2rem solid #29d9d5;
+  background: none;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #aaa;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.4rem;
+}
+
+.credit {
+  background: #222;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: #aaa;
+}
+
+.credit span {
+  color: #29d9d5;
+}
+
+
+svg path{
+  stroke:#FF0000;
+  fill:#FFCC00;
+  stroke-width: .25;
+}
+svg path:hover{
+  fill:#FF9900;
+  cursor: pointer;
+}
+svg text{
+  cursor: pointer;
+}
